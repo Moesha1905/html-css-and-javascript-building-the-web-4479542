@@ -110,3 +110,27 @@ h1:hover {
   bottom: 45%;
   left: 5%;
 }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform:  translateX(0);
+  }
+}
+
+.plant {
+  animation: slide-in 1s ease-in-out;
+}
+
+.plant {
+  transition: width 2s, height 2s, background-color 1s;
+}
+
+.plant:hover {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
